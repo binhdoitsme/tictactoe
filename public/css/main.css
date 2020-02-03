@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input, button {
+    font-family: inherit;
+}
+input:not([type='radio']) {
+    width: 16rem;
+}
+.tictactoe-frame>tbody>tr>td {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    text-align: center;
+}
+.gameplay-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 850px;
+}
+.gameplay-container > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+div.player {
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    width: 90px;
+    padding: .25rem;
+    background: yellow;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: .5s all ease;
+}
+button:hover {
+    background-color: darkslategrey;
+    color: white;
+}
+.active {
+    color: red;
+}

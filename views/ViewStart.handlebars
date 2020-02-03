@@ -1,0 +1,23 @@
+{{!-- THIS IS THE PARTIAL VIEW FOR PLAYER INFO --}}
+<div class='modal-container'>
+    <form class='player-info modal-content'>
+        <h3>Enter player information:</h3>
+        <input name='player-one' id='player-one' placeholder='Player One name...' required />
+        <input name='player-one-rep' id='player-one-rep' placeholder='Player One representation...' required type="text"
+            maxlength="1" />
+        <br />
+        <input name='player-two' id='player-two' placeholder='Player Two name...' required />
+        <input name='player-two-rep' id='player-two-rep' placeholder='Player Two representation...' required type="text"
+            maxlength="1" />
+        <br />
+        <h3>Choose game size:</h3>
+        <span><input type='radio' name='size' required value='3' />3x3</span>
+        <br />
+        <span><input type='radio' name='size' required value='4' />4x4</span>
+        <br />
+        <span><input type='radio' name='size' required value='5' />5x5</span>
+        <br />
+        <button>Submit</button>
+    </form>
+</div>
+<script src='/js/player-info.js'></script>

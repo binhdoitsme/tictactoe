@@ -1,0 +1,31 @@
+<h2>Game #{{gameIndex}}</h2>
+<div>
+    <div class='player' id='one'>
+        <div>{{players.[0].playerRef}}</div>
+        <div>{{players.[0].representation}}</div>
+        <div><strong>WON: {{winCounts.[0]}}</strong></div>
+        {{#if activePlayerArray.[0]}}
+            <div class='active'>ACTIVE</div>
+        {{/if}}
+    </div>
+    <table class='tictactoe-frame' cellspacing='0'>
+        <tbody>
+            {{#each gameboard}}
+            <tr>
+                {{#each this}}
+                <td class='tictactoe-cell'>{{this}}</td>
+                {{/each}}
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <div class='player' id='two'>
+        <div>{{players.[1].playerRef}}</div>
+        <div>{{players.[1].representation}}</div>
+        <div><strong>WON: {{winCounts.[1]}}</strong></div>
+        {{#if activePlayerArray.[1]}}
+            <div class='active'>ACTIVE</div>
+        {{/if}}
+    </div>
+</div>
+<button id='restart'>Restart</button>

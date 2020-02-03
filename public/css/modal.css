@@ -1,0 +1,41 @@
+﻿.modal-container {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.modal-content {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 4px;
+    max-width: 450px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-container > .modal-form {
+    width: 75%;
+}
+
+.modal-content > p {
+    text-align: center;
+}
+
+.modal-content > div {
+    display: flex;
+    justify-content: space-around;
+    min-width: 50%;
+}
+
+.modal-content > div > button {
+    min-width: 6rem;
+    box-sizing: border-box;
+}
