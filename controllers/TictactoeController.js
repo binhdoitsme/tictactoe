@@ -13,6 +13,7 @@ class TictactoeController {
         this.board = new Board(size);
         this.gamesPlayed = 0;
         const mapValues = [];
+
         playerNames.forEach(playerName => {
             mapValues.push([playerName, 0]);
         });
@@ -49,6 +50,7 @@ class TictactoeController {
      * Check if a player has won the game
      */
     checkWin() {
+        console.log(this.board.checkWin());
         return this.board.checkWin();
     }
 
